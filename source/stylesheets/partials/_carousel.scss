@@ -34,11 +34,21 @@
   }
 }
 
+.slick-arrow {
+  font-weight: bold;
+}
+
 .slick-prev {
   left: 30px;
   z-index: 1;
+  &:before {
+    content: "<";
+  }
 }
 
 .slick-next {
   right: 30px;
+  &:before {
+    content: ">";
+  }
 }
