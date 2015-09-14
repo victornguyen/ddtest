@@ -4,8 +4,10 @@
 
 // Base
 @import "base/colours";
+@import "base/content";
 
 // Layout
-@import "layout/layout"
+@import "layout/layout";
 
-// Modules
+// Partials
+@import "partials/header";

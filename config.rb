@@ -53,6 +53,8 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+set :partials_dir, 'partials'
+
 # Add bower's directory to sprockets asset path
 after_configuration do
   sprockets.append_path File.join "#{root}", "bower_components"
