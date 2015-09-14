@@ -1,0 +1,44 @@
+@import "slick-carousel";
+@import "slick-carousel/slick/slick-theme";
+
+.carousel {
+  background: $grey-dark;
+}
+
+.carousel__slide {
+  height: 460px;
+  line-height: 460px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $grey-light;
+}
+
+
+// Slick Carousel overrides
+
+.slick-dots {
+  bottom: 0;
+  li {
+    button:before {
+      font-size: 40px;
+      color: $white;
+      opacity: 0.1;
+      transition: all 0.15s ease;
+    }
+    &.slick-active {
+      button:before {
+        color: $white;
+        opacity: 0.4;
+      }
+    }
+  }
+}
+
+.slick-prev {
+  left: 30px;
+  z-index: 1;
+}
+
+.slick-next {
+  right: 30px;
+}
