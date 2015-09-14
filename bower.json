@@ -1,0 +1,19 @@
+{
+  "name": "ddtest",
+  "version": "0.0.0",
+  "authors": [
+    "Victor Nguyen <vic.nguyen@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "DDBreakpoints": "ddbreakpoints#~1.0.4",
+    "normalize-css": "~3.0.3"
+  }
+}

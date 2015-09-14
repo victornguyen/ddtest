@@ -53,6 +53,11 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+# Add bower's directory to sprockets asset path
+after_configuration do
+  sprockets.append_path File.join "#{root}", "bower_components"
+end
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
