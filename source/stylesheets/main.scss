@@ -1,10 +1,12 @@
 // Vendor
 @import "normalize-css";
+@import "susy";
 @import "DDBreakpoints";
 
 // Base
 @import "base/colours";
 @import "base/content";
+@import "base/susy-settings";
 
 // Layout
 @import "layout/layout";
@@ -12,3 +14,4 @@
 // Partials
 @import "partials/header";
 @import "partials/carousel";
+@import "partials/gallery";

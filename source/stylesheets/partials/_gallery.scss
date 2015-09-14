@@ -1,0 +1,20 @@
+.gallery {
+  margin-top: gutter(12);
+  margin-bottom: gutter(12);
+}
+
+.gallery__image {
+  position: relative;
+  img {
+    display: block;
+    width: 100%
+  }
+}
+
+.gallery__image--half {
+  @include span(6);
+
+  &:last-child {
+    @include last;
+  }
+}

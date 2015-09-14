@@ -16,6 +16,7 @@
     "DDBreakpoints": "ddbreakpoints#~1.0.4",
     "jquery": "^1.11.3",
     "normalize-css": "~3.0.3",
-    "slick-carousel": "~1.5.8"
+    "slick-carousel": "~1.5.8",
+    "susy": "~2.2.6"
   }
 }
