@@ -55,9 +55,19 @@ set :images_dir, 'images'
 
 set :partials_dir, 'partials'
 
-# Add bower's directory to sprockets asset path
+set :fonts_dir, 'fonts'
+
 after_configuration do
+  # Add bower's directory to sprockets asset path
   sprockets.append_path File.join "#{root}", "bower_components"
+
+  # Add slick carousel assets from bower
+  # Ideally, we'd loop through a hash with asset paths and types to DRY this up
+  sprockets.import_asset('slick-carousel/slick/ajax-loader.gif') {|p| "#{images_dir}/ajax-loader.gif"}
+  sprockets.import_asset('slick-carousel/slick/fonts/slick.woff') {|p| "#{fonts_dir}/slick.woff"}
+  sprockets.import_asset('slick-carousel/slick/fonts/slick.ttf') {|p| "#{fonts_dir}/slick.ttf"}
+  sprockets.import_asset('slick-carousel/slick/fonts/slick.svg') {|p| "#{fonts_dir}/slick.svg"}
+  sprockets.import_asset('slick-carousel/slick/fonts/slick.eot') {|p| "#{fonts_dir}/slick.eot"}
 end
 
 # Build-specific configuration
