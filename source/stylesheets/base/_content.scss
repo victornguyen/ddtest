@@ -7,7 +7,7 @@
 }
 
 .content__inner {
+  @include container(960px);
   min-width: 320px;
-  max-width: 960px;
   margin: 0 auto;
 }

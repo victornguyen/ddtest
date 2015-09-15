@@ -1,0 +1,52 @@
+.breakout {
+  background: $white;
+  @include bp(s) {
+    padding: 1em 0;
+  }
+  @include bp(m) {
+    padding: 2em 0;
+  }
+  @include bp(960) {
+    padding: 3em 0;
+  }
+}
+
+.breakout__info {
+  padding: 1em;
+  text-align: center;
+
+  @include bp(s) {
+    text-align: left;
+    padding-right: 15em;
+  }
+  @include bp(m) {
+    padding-right: 20em;
+  }
+  @include bp(960) {
+    padding-right: 35em;
+  }
+}
+
+.breakout__title {
+  @include title(1em);
+  color: $black;
+  margin-bottom: 0.2em;
+
+  @include bp(s) {
+    font-size: 1.4em;
+  }
+  @include bp(m) {
+    font-size: 1.8em;
+  }
+}
+
+.breakout__copy {
+  font-size: 1em;
+  line-height: 1.2;
+  margin-bottom: 2em;
+
+  @include bp(m) {
+    font-size: 1.1em;
+    line-height: 1.4;
+  }
+}
