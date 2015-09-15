@@ -6,6 +6,7 @@
   $(function(){
 
     $('.carousel').slick({
+      autoplay: true,
       dots: true,
       mobileFirst: true
     });
