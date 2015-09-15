@@ -1,5 +1,13 @@
 .intro {
   text-align: center;
+  margin-bottom: 2em;
+
+  @include bp(s) {
+    margin-bottom: 3em;
+  }
+  @include bp(m) {
+    margin-bottom: 4em;
+  }
 }
 
 .intro__title {
