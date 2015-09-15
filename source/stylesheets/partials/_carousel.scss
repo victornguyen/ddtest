@@ -10,11 +10,21 @@ $slick-next-character: ">";
 }
 
 .carousel__slide {
-  @include title(1em);
-  height: 460px;
-  line-height: 460px;
+  @include title(0.8em);
+  height: 240px;
+  line-height: 240px;
   text-align: center;
   color: $grey-light;
+
+  @include bp(s) {
+    font-size: 1em;
+    height: 320px;
+    line-height: 320px;
+  }
+  @include bp(m) {
+    height: 460px;
+    line-height: 460px;
+  }
 }
 
 
@@ -44,10 +54,16 @@ $slick-next-character: ">";
 }
 
 .slick-prev {
-  left: 30px;
+  left: 10px;
   z-index: 1;
+  @include bp(s) {
+    left: 30px;
+  }
 }
 
 .slick-next {
-  right: 30px;
+  right: 10px;
+  @include bp(s) {
+    right: 30px;
+  }
 }
