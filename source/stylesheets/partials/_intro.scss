@@ -46,6 +46,7 @@
 
 .intro__copy {
   font-size: 1em;
+  line-height: 1.2;
   margin-bottom: 2em;
   padding: 0 1em;
 
@@ -55,6 +56,7 @@
   }
   @include bp(m) {
     font-size: 1.5em;
+    line-height: 1.4;
     padding: 0 3em;
   }
 }
