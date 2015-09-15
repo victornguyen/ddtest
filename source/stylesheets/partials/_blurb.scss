@@ -1,0 +1,40 @@
+.blurb {
+  text-align: center;
+  margin: 1em auto;
+
+  @include bp(s) {
+    margin: 1.5em auto;
+  }
+  @include bp(m) {
+    margin: 2em auto;
+  }
+}
+
+.blurb__title {
+  @include title(1em);
+  color: $white;
+  margin-bottom: 0.2em;
+
+  @include bp(s) {
+    font-size: 1.5em;
+  }
+}
+
+.blurb__copy {
+  font-size: 1em;
+  line-height: 1.2;
+  margin-bottom: 2em;
+  padding: 0 1em;
+
+  @include bp(s) {
+    font-size: 1em;
+    line-height: 1.6;
+    padding: 0 10em;
+  }
+  @include bp(l) {
+    padding: 0 14em;
+  }
+  @include bp(960) {
+    padding: 0 18em;
+  }
+}
