@@ -10,10 +10,10 @@ $slick-next-character: ">";
 }
 
 .carousel__slide {
+  @include title(1em);
   height: 460px;
   line-height: 460px;
   text-align: center;
-  @include title(1em);
   color: $grey-light;
 }
 
