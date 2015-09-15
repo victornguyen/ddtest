@@ -4,9 +4,11 @@
 @import "DDBreakpoints";
 
 // Base
+@import "base/susy-settings";
+@import "base/fonts";
+@import "base/typography";
 @import "base/colours";
 @import "base/content";
-@import "base/susy-settings";
 
 // Layout
 @import "layout/layout";

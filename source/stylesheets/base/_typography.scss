@@ -1,0 +1,8 @@
+$title-letter-spacing: 0.15em;
+
+@mixin title($size, $spacing: $title-letter-spacing) {
+  font-size: $size;
+  font-weight: bold;
+  letter-spacing: $spacing;
+  text-transform: uppercase;
+}
