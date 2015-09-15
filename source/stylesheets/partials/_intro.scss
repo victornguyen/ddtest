@@ -1,0 +1,52 @@
+.intro {
+  text-align: center;
+}
+
+.intro__title {
+  @include title(1.8em);
+  color: $white;
+  margin-bottom: 0.2em;
+
+  @include bp(s) {
+    font-size: 3em;
+  }
+  @include bp(m) {
+    font-size: 4em;
+  }
+  @include bp(960) {
+    font-size: 5em;
+  }
+}
+
+// I wouldn't actually call it this, but it is pretty tiny
+.intro__tiny-sub-title {
+  @include title(0.7em);
+
+  @include bp(xs) {
+    font-size: 0.875em;
+  }
+}
+
+// I know BEM can be verbose, but I think it's a small price to pay for clarity
+// Local-scoped CSS with CSS Modules looks really interesting though
+.intro__tiny-sub-title-seperator {
+  text-transform: lowercase;
+  font-style: italic;
+  // I'd probably base64 inline a subset of the script font
+  // used for this "for" text. Or talk to the designer.
+}
+
+.intro__copy {
+  font-size: 1em;
+  margin-bottom: 2em;
+  padding: 0 1em;
+
+  @include bp(s) {
+    font-size: 1.25em;
+    padding: 0 2em;
+  }
+  @include bp(m) {
+    font-size: 1.5em;
+    padding: 0 3em;
+  }
+}
